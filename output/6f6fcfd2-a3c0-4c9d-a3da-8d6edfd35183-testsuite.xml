@@ -1,0 +1,22 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1567973260239' stop='1567973276048'>
+    <name>Check Price</name>
+    <title>Check Price</title>
+    <test-cases>
+        <test-case start='1567973262414' status='failed' stop='1567973276045'>
+            <name>Check Price</name>
+            <title>Check Price</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>done is not a function</message>
+                <stack-trace>TypeError: done is not a function
+                    at Object.stop (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\wdio-video-recorder\index.js:78:7)
+                    at Video._after (C:\Users\Akkaya\Desktop\codeceptjs_example\video_helper.js:15:40)
+                    at recorder.add (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\codeceptjs\lib\listener\helpers.js:24:69)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

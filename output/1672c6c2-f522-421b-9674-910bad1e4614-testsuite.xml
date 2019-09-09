@@ -1,0 +1,268 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1568047621649' stop='1568047675958'>
+    <name>Check Price</name>
+    <title>Check Price</title>
+    <test-cases>
+        <test-case start='1568047624961' status='passed' stop='1568047675884'>
+            <name>Check Price</name>
+            <title>Check Price</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1568047630046' status='passed' stop='1568047655531'>
+                    <name>Given I go to https://www.sahibinden.com/en </name>
+                    <title>Given I go to https://www.sahibinden.com/en </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1568047630046' status='passed' stop='1568047654135'>
+                            <name>I am on page "/en"</name>
+                            <title>I am on page "/en"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047654136' status='passed' stop='1568047654572'>
+                            <name>I wait for element {"id":"searchText"}</name>
+                            <title>I wait for element {"id":"searchText"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047654572' status='passed' stop='1568047654997'>
+                            <name>I wait for enabled {"id":"searchText"}</name>
+                            <title>I wait for enabled {"id":"searchText"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047654997' status='passed' stop='1568047655431'>
+                            <name>I see element {"id":"searchText"}</name>
+                            <title>I see element {"id":"searchText"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1568047655531' status='passed' stop='1568047662414'>
+                    <name>When I search for "renault megane" </name>
+                    <title>When I search for "renault megane" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1568047655531' status='passed' stop='1568047661676'>
+                            <name>searchFragment: searchKeyword </name>
+                            <title>searchFragment: searchKeyword </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1568047655531' status='passed' stop='1568047656261'>
+                                    <name>I fill field {"id":"searchText"}, "renault megane"</name>
+                                    <title>I fill field {"id":"searchText"}, "renault megane"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1568047656363' status='passed' stop='1568047661676'>
+                                    <name>I press key "Enter"</name>
+                                    <title>I press key "Enter"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1568047661676' status='passed' stop='1568047662055'>
+                            <name>I wait for element {"id":"searchResultsTable"}</name>
+                            <title>I wait for element {"id":"searchResultsTable"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047662055' status='passed' stop='1568047662414'>
+                            <name>I see element {"id":"searchResultsTable"}</name>
+                            <title>I see element {"id":"searchResultsTable"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1568047662414' status='passed' stop='1568047664606'>
+                    <name>And I click "Cars" </name>
+                    <title>And I click "Cars" </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1568047662414' status='passed' stop='1568047663582'>
+                            <name>searchResultPage: selectCategory </name>
+                            <title>searchResultPage: selectCategory </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1568047662414' status='passed' stop='1568047662794'>
+                                    <name>I wait for enabled {xpath: .//a[contains(., 'Cars')]}</name>
+                                    <title>I wait for enabled {xpath: .//a[contains(., 'Cars')]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1568047662895' status='passed' stop='1568047663582'>
+                                    <name>I click {xpath: .//a[contains(., 'Cars')]}</name>
+                                    <title>I click {xpath: .//a[contains(., 'Cars')]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1568047663582' status='passed' stop='1568047663948'>
+                            <name>I wait for element {"id":"searchResultsTable"}</name>
+                            <title>I wait for element {"id":"searchResultsTable"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047663948' status='passed' stop='1568047664606'>
+                            <name>I see element {"id":"searchResultsTable"}</name>
+                            <title>I see element {"id":"searchResultsTable"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1568047664606' status='passed' stop='1568047668148'>
+                    <name>And I Go to "2" result page </name>
+                    <title>And I Go to "2" result page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1568047664606' status='passed' stop='1568047666419'>
+                            <name>searchResultPage: goResultPageNumber </name>
+                            <title>searchResultPage: goResultPageNumber </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1568047664606' status='passed' stop='1568047665047'>
+                                    <name>I scroll page to bottom </name>
+                                    <title>I scroll page to bottom </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1568047665047' status='passed' stop='1568047665403'>
+                                    <name>I wait for element {xpath: .//li[contains(., '2')][ancestor::ul[contains(concat(' ', normalize-space(./@class), ' '), ' pageNaviButtons ')]]}</name>
+                                    <title>I wait for element {xpath: .//li[contains(., '2')][ancestor::ul[contains(concat(' ', normalize-space(./@class), ' '), ' pageNaviButtons ')]]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1568047665403' status='passed' stop='1568047665737'>
+                                    <name>I wait for enabled {xpath: .//li[contains(., '2')][ancestor::ul[contains(concat(' ', normalize-space(./@class), ' '), ' pageNaviButtons ')]]}</name>
+                                    <title>I wait for enabled {xpath: .//li[contains(., '2')][ancestor::ul[contains(concat(' ', normalize-space(./@class), ' '), ' pageNaviButtons ')]]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1568047665837' status='passed' stop='1568047666419'>
+                                    <name>I click {xpath: .//li[contains(., '2')][ancestor::ul[contains(concat(' ', normalize-space(./@class), ' '), ' pageNaviButtons ')]]}</name>
+                                    <title>I click {xpath: .//li[contains(., '2')][ancestor::ul[contains(concat(' ', normalize-space(./@class), ' '), ' pageNaviButtons ')]]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1568047666419' status='passed' stop='1568047667017'>
+                            <name>I wait for element {"id":"searchResultsTable"}</name>
+                            <title>I wait for element {"id":"searchResultsTable"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047667017' status='passed' stop='1568047667422'>
+                            <name>I see element {"id":"searchResultsTable"}</name>
+                            <title>I see element {"id":"searchResultsTable"}</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047667422' status='passed' stop='1568047668148'>
+                            <name>I see "You are now viewing page 2"</name>
+                            <title>I see "You are now viewing page 2"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1568047668148' status='passed' stop='1568047669198'>
+                    <name>And I save the price of the "3"rd car with an image </name>
+                    <title>And I save the price of the "3"rd car with an image </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1568047668148' status='passed' stop='1568047668513'>
+                            <name>searchResultPage: getSelectRowPrice </name>
+                            <title>searchResultPage: getSelectRowPrice </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1568047668148' status='passed' stop='1568047668510'>
+                                    <name>I grab text from {xpath: (.//tr)[position()=4]//td[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsPriceValue ')][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</name>
+                                    <title>I grab text from {xpath: (.//tr)[position()=4]//td[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsPriceValue ')][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1568047668513' status='passed' stop='1568047669198'>
+                            <name>I save screenshot "2rd_Page_Screen_Shot.png"</name>
+                            <title>I save screenshot "2rd_Page_Screen_Shot.png"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1568047669198' status='passed' stop='1568047675167'>
+                    <name>And I go to the "3"rd car details </name>
+                    <title>And I go to the "3"rd car details </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1568047669199' status='passed' stop='1568047673699'>
+                            <name>searchResultPage: openSelectRowDetail </name>
+                            <title>searchResultPage: openSelectRowDetail </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1568047669199' status='passed' stop='1568047669545'>
+                                    <name>I wait for element {xpath: (.//tr)[position()=4][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</name>
+                                    <title>I wait for element {xpath: (.//tr)[position()=4][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1568047669545' status='passed' stop='1568047669911'>
+                                    <name>I wait for enabled {xpath: (.//tr)[position()=4][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</name>
+                                    <title>I wait for enabled {xpath: (.//tr)[position()=4][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1568047670011' status='passed' stop='1568047673698'>
+                                    <name>I click {xpath: (.//tr)[position()=4][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</name>
+                                    <title>I click {xpath: (.//tr)[position()=4][ancestor::tbody[contains(concat(' ', normalize-space(./@class), ' '), ' searchResultsRowClass ')]]}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1568047673699' status='passed' stop='1568047674203'>
+                            <name>I wait for element ".classifiedDetailTitle"</name>
+                            <title>I wait for element ".classifiedDetailTitle"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047674203' status='passed' stop='1568047674681'>
+                            <name>I wait for element ".classifiedDetailContent"</name>
+                            <title>I wait for element ".classifiedDetailContent"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                        <step start='1568047674681' status='passed' stop='1568047675167'>
+                            <name>I wait for element ".classifiedInfo"</name>
+                            <title>I wait for element ".classifiedInfo"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1568047675167' status='passed' stop='1568047675884'>
+                    <name>Then Check if the price inside the details is same </name>
+                    <title>Then Check if the price inside the details is same </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1568047675167' status='passed' stop='1568047675884'>
+                            <name>I see "112,000 TL"</name>
+                            <title>I see "112,000 TL"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

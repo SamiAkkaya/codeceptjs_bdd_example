@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1567976080814' stop='1567976096253'>
+    <name>Check Price</name>
+    <title>Check Price</title>
+    <test-cases>
+        <test-case start='1567976083281' status='failed' stop='1567976095759'>
+            <name>Check Price</name>
+            <title>Check Price</title>
+            <labels/>
+            <parameters/>
+            <steps>
+                <step start='1567976088292' status='failed' stop='1567976095759'>
+                    <name>Given I go to https://www.sahibinden.com/en </name>
+                    <title>Given I go to https://www.sahibinden.com/en </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1567976088292' status='passed' stop='1567976091076'>
+                            <name>I am on page "/en"</name>
+                            <title>I am on page "/en"</title>
+                            <attachments/>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='dc6d9f03-21a1-40e1-8027-6da4f9684479-attachment.png' type='image/png' size='567529'/>
+            </attachments>
+            <failure>
+                <message>I.startRecording is not a function</message>
+                <stack-trace>TypeError: I.startRecording is not a function
+                    at Given (C:\Users\Akkaya\Desktop\codeceptjs_example\step_definitions\steps.js:8:7)
+                    at runSteps (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\codeceptjs\lib\interfaces\gherkin.js:45:15)
+                    at Test (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\codeceptjs\lib\interfaces\gherkin.js:84:46)
+                    at Context.test.fn (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\codeceptjs\lib\scenario.js:56:14)
+                    at callFnAsync (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\mocha\lib\runnable.js:415:21)
+                    at Test.Runnable.run (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\mocha\lib\runnable.js:357:7)
+                    at Runner.runTest (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\mocha\lib\runner.js:535:10)
+                    at C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\mocha\lib\runner.js:653:12
+                    at next (C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\mocha\lib\runner.js:447:14)
+                    at C:\Users\Akkaya\Desktop\codeceptjs_example\node_modules\mocha\lib\runner.js:457:7</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
